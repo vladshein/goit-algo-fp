@@ -27,6 +27,7 @@ def dijkstra(graph, start):
 
         # Перевіряємо сусідів
         for neighbor, weight in graph[current_vertex].items():
+            print(f"Neighbour is {neighbor}, weight is {weight}")
             distance = current_distance + weight
             # Опрацьовуємо тільки якщо менший
             if distance < distances[neighbor]:
